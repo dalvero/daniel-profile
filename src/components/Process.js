@@ -43,7 +43,7 @@ export default function Process() {
   const x = useTransform(scrollYProgress, [0, 1], ["66%", "-66%"]);
 
   return (
-    <section ref={targetRef} className="relative h-[300vh]">
+    <section id="process" ref={targetRef} className="relative h-[300vh]">
       {/* Sticky Wrapper, Membuat konten tetap di layar selama scroll */}
       <div className="sticky top-0 flex h-screen mt-20 flex-col items-center justify-center overflow-hidden">
         

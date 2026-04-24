@@ -49,7 +49,7 @@ export default function SigLanguage() {
   const getNextIndex = () => (index + 1) % DATA.length;
 
   return (
-    <div className="w-full min-h-screen bg-black text-white flex flex-col items-center justify-center relative overflow-hidden px-4">
+    <div id="signature" className="w-full min-h-screen bg-black text-white flex flex-col items-center justify-center relative overflow-hidden px-4">
       {/* Carousel Image */}
       <div className="relative w-full max-w-6xl mt-15 h-[450px] flex items-center justify-center gap-4 md:gap-10">
         {/* Prev Image (Left Faded) */}

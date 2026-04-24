@@ -40,7 +40,7 @@ export default function Journey() {
     };
 
     return (
-        <div ref={containerRef} className="flex h-[450vh] bg-white relative overflow-hidden">
+        <div id="journey" ref={containerRef} className="flex h-[450vh] bg-white relative overflow-hidden">
         
             {/* Left Section */}
             <div className="w-1/2 flex flex-col z-10 border-r border-gray-50">

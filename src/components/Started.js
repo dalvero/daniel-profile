@@ -141,7 +141,7 @@ export default function Started() {
     }, []);
 
     return (
-        <div ref={containerRef} className="flex h-screen bg-black overflow-hidden select-none">
+        <div id="started" ref={containerRef} className="flex h-screen bg-black overflow-hidden select-none">
             {/* Left Content */}
             <div ref={scrollContentRef} className="w-full md:w-1/2 h-full overflow-y-auto no-scrollbar px-8 md:px-20 py-24" style={{ overscrollBehavior: "none" }}>
                 <div className="max-w-xl">

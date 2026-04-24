@@ -44,6 +44,7 @@ function Card3D({ lang, isHovered, onEnter, onLeave }) {
 
   return (
     <div
+        id="tech"
         ref={cardRef}
         onMouseMove={handleMouseMove}
         onMouseEnter={onEnter}

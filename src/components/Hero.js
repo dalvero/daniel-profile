@@ -85,7 +85,7 @@ export default function Hero() {
   };
 
   return (
-    <div className="h-screen px-10 pl-20 grid grid-cols-2 bg-[rgb(225,227,229)]">
+    <div id="hero" className="h-screen px-10 pl-20 grid grid-cols-2 bg-[rgb(225,227,229)]">
       <div className="flex flex-col items-start justify-center gap-6">
         <p className="text-4xl font-normal tracking-[0.2em] uppercase text-black">
           Born to Code. Forced to Work.
@@ -117,7 +117,7 @@ export default function Hero() {
               : "transform 0.1s ease-out, box-shadow 0.1s ease-out",
             transformStyle: "preserve-3d",
           }}
-          className="relative w-[380px] h-[580px] mt-25 rounded-2xl overflow-hidden cursor-pointer grayscale hover:grayscale-0 transition-all duration-500"
+          className="relative w-[380px] h-[525px] mt-15 rounded-2xl overflow-hidden cursor-pointer grayscale hover:grayscale-0 transition-all duration-500"
         >
           <Image src="/images/daniel.jpeg" alt="Profile" fill className="object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />

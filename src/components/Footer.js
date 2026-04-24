@@ -43,7 +43,7 @@ export default function Footer() {
     ];
 
     return (
-        <footer className="flex flex-col md:flex-row min-h-screen w-full">
+        <footer id="footer" className="flex flex-col md:flex-row min-h-screen w-full">
 
             {/* Left Section */}
             <div className="w-full md:w-1/2 bg-black text-white p-10 md:p-16 flex flex-col justify-between">

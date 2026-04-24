@@ -34,6 +34,7 @@ export default function Principles() {
 
   return (
     <div
+      id="principles"
       ref={sectionRef}
       className="flex flex-col items-center justify-center h-screen bg-black overflow-hidden"
     >

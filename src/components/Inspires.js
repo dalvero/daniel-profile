@@ -89,7 +89,7 @@ function QuoteRow({ quote, progress }) {
     const x = useSpring(xRaw, { stiffness: 60, damping: 15 });
 
     return (
-        <div className={`w-[150vw] -left-[25vw] relative ${quote.bg} py-14 md:py-24 border-y border-white/10 flex items-center overflow-hidden`}>
+        <div id="inspires" className={`w-[150vw] -left-[25vw] relative ${quote.bg} py-14 md:py-24 border-y border-white/10 flex items-center overflow-hidden`}>
         <motion.div 
             style={{ x }} 
             className="flex whitespace-nowrap gap-10 items-center px-10"

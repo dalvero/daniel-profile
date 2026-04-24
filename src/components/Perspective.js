@@ -88,7 +88,7 @@ export default function Greeting() {
   }, []);
 
   return (
-    <div className="flex flex-col bg-white items-center pb-32">
+    <div id="perspective" className="flex flex-col bg-white items-center pb-32">
 
       {/* Title */}
       <h1 className="text-6xl mt-35 uppercase text-center px-10 max-w-4xl leading-tight">
