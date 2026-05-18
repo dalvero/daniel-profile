@@ -1,13 +1,13 @@
-import Hero from "@/components/Hero"
-import Perspective from "@/components/Perspective"
-import Principles from "@/components/Principles"
-import Process from "@/components/Process"
-import Inspires from "@/components/Inspires"
-import Started from "@/components/Started"
-import SigLanguage from "@/components/SigLanguage"
-import Language from "@/components/Language"
-import Journey from "@/components/Journey"
-import Footer from "@/components/Footer"
+import Hero from "@/components/landing/Hero"
+import Perspective from "@/components/landing/Perspective"
+import Principles from "@/components/landing/Principles"
+import Process from "@/components/landing/Process"
+import Inspires from "@/components/landing/Inspires"
+import Started from "@/components/landing/Started"
+import SigLanguage from "@/components/landing/SigLanguage"
+import Language from "@/components/landing/Language"
+import Journey from "@/components/landing/Journey"
+import Footer from "@/components/common/Footer"
 
 export default function Home() {
   return (

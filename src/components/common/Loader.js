@@ -6,13 +6,15 @@ import { useState, useEffect } from "react";
 const TARGET_TEXT = "DANIEL.ALFERO";
 const CHARS = "0123456789!@#$%^&*()_+?/<>{}[]";
 
-export default function Loader() {
+export default function Loader({ onComplete }) {
     const [displayText, setDisplayText] = useState("");
     const [progress, setProgress] = useState(0);
 
     useEffect(() => {
         let currentIndex = 0;
-        let scrambleState = false; // Gunakan variabel lokal untuk menghindari warning dependency
+        let scrambleState = false;
+        let stepCount = 0;
+        const totalSteps = TARGET_TEXT.length * 2 + 1;
 
         const interval = setInterval(() => {
         if (currentIndex <= TARGET_TEXT.length) {
@@ -25,28 +27,16 @@ export default function Loader() {
             scrambleState = false;
             currentIndex++;
             }
+            stepCount++;
+            setProgress(Math.min((stepCount / totalSteps) * 100, 100));
         } else {
             clearInterval(interval);
+            onComplete?.();
         }
         }, 50);
 
         return () => clearInterval(interval);
-    }, []);
-
-    useEffect(() => {
-        const timer = setInterval(() => {
-        setProgress((oldProgress) => {
-            if (oldProgress === 100) {
-            clearInterval(timer);
-            return 100;
-            }
-            const diff = Math.random() * 15;
-            return Math.min(oldProgress + diff, 100);
-        });
-        }, 200);
-
-        return () => clearInterval(timer);
-    }, []);
+    }, [onComplete]);
 
     return (
         <motion.div

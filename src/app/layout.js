@@ -1,7 +1,8 @@
 import { League_Gothic, Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import ClientWrapper from "@/components/ClientWrapper";
+import Navbar from "@/components/common/Navbar";
+import ClientWrapper from "@/components/common/ClientWrapper";
+import PageTransition from "@/components/common/PageTransition";
 
 // Font
 const leagueGothic = League_Gothic({
@@ -22,11 +23,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${leagueGothic.variable} ${inter.variable} h-full antialiased`}>
+    <html lang="en" className={`${leagueGothic.variable} ${inter.variable} h-full antialiased relative`}>
       <body className={`${leagueGothic.variable} font-[family-name:var(--font-league-gothic)] min-h-full flex flex-col`}>
         <ClientWrapper>
-          <Navbar />
-          {children}
+          <PageTransition>
+            <Navbar />
+            {children}
+          </PageTransition>
         </ClientWrapper>
       </body>
     </html>

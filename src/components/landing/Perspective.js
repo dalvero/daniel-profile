@@ -130,6 +130,7 @@ export default function Greeting() {
               src={img.src}
               alt={`Floating image ${img.id}`}
               fill
+              sizes="260px"
               className="object-cover"
             />
           </div>
@@ -150,6 +151,7 @@ export default function Greeting() {
             src={MAIN_IMAGE}
             alt="Main image"
             fill
+            sizes="550px"
             className="object-cover"
           />
           <div className="absolute inset-0 bg-black/10" />

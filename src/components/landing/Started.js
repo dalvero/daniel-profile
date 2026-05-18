@@ -197,6 +197,7 @@ export default function Started() {
                                 src={src}
                                 alt={`Experience ${i}`}
                                 fill
+                                sizes="(max-width: 768px) 100vw, 50vw"
                                 priority={i === 0}
                                 className="object-cover grayscale brightness-[0.6] group-hover:grayscale-0 group-hover:brightness-100 group-hover:scale-105 transition-all duration-700"
                             />

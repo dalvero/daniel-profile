@@ -119,7 +119,7 @@ export default function Hero() {
           }}
           className="relative w-[380px] h-[525px] mt-15 rounded-2xl overflow-hidden cursor-pointer grayscale hover:grayscale-0 transition-all duration-500"
         >
-          <Image src="/images/daniel.jpeg" alt="Profile" fill className="object-cover" />
+          <Image src="/images/daniel.jpeg" alt="Profile" fill sizes="380px" loading="eager" className="object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
           <div
             className="absolute inset-0 pointer-events-none rounded-2xl"

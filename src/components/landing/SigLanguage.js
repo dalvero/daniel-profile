@@ -61,6 +61,7 @@ export default function SigLanguage() {
             src={DATA[getPrevIndex()].image}
             alt="prev"
             fill
+            sizes="256px"
             className="object-cover rounded-sm"
           />
           <div className="absolute inset-0 bg-black/40" />
@@ -82,6 +83,7 @@ export default function SigLanguage() {
                 src={DATA[index].image}
                 alt={DATA[index].name}
                 fill
+                sizes="(max-width: 768px) 320px, 400px"
                 className="object-cover brightness-110 contrast-110 transition-all duration-700"
                 priority
               />
@@ -100,6 +102,7 @@ export default function SigLanguage() {
             src={DATA[getNextIndex()].image}
             alt="next"
             fill
+            sizes="256px"
             className="object-cover rounded-sm"
           />
           <div className="absolute inset-0 bg-black/40" />

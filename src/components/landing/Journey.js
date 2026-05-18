@@ -103,11 +103,12 @@ export default function Journey() {
                     style={{ y: y1 }} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-10%" }} 
                     variants={imageVariants}
                     className="absolute top-[5vh] left-[10%] w-[280px] h-[380px] z-10 shadow-sm">
-                    <Image 
-                        src="/images/cimory.jpeg" 
-                        alt="" 
-                        fill 
-                        className="object-cover hover:grayscale-0 brightness-110 contrast-110 transition-all duration-700 grayscale" 
+                    <Image
+                        src="/images/cimory.jpeg"
+                        alt=""
+                        fill
+                        sizes="280px"
+                        className="object-cover hover:grayscale-0 brightness-110 contrast-110 transition-all duration-700 grayscale"
                     />
                 </motion.div>
 
@@ -116,11 +117,12 @@ export default function Journey() {
                     style={{ y: y6 }} initial="hidden" whileInView="visible" viewport={{ once: true }} 
                     variants={imageVariants}
                     className="absolute top-[45vh] right-[15%] w-[250px] h-[320px] z-10">
-                    <Image 
-                        src="/images/partime_2.jpeg" 
-                        alt="" 
-                        fill 
-                        className="object-cover border-8 border-white shadow-lg hover:grayscale-0 brightness-110 contrast-110 transition-all duration-700 grayscale" 
+                    <Image
+                        src="/images/partime_2.jpeg"
+                        alt=""
+                        fill
+                        sizes="250px"
+                        className="object-cover border-8 border-white shadow-lg hover:grayscale-0 brightness-110 contrast-110 transition-all duration-700 grayscale"
                     />
                 </motion.div>
 
@@ -129,11 +131,12 @@ export default function Journey() {
                     style={{ y: y2 }} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-10%" }} 
                     variants={imageVariants}
                     className="absolute top-[85vh] left-[20%] w-[320px] h-[450px] z-10">
-                    <Image 
-                        src="/images/partime_1.jpeg" 
-                        alt="" 
-                        fill 
-                        className="object-cover border-[15px] border-gray-50 shadow-lg hover:grayscale-0 brightness-110 contrast-110 transition-all duration-700 grayscale" 
+                    <Image
+                        src="/images/partime_1.jpeg"
+                        alt=""
+                        fill
+                        sizes="320px"
+                        className="object-cover border-[15px] border-gray-50 shadow-lg hover:grayscale-0 brightness-110 contrast-110 transition-all duration-700 grayscale"
                     />
                 </motion.div>
 
@@ -142,11 +145,12 @@ export default function Journey() {
                     style={{ y: y7 }} initial="hidden" whileInView="visible" viewport={{ once: true }} 
                     variants={imageVariants}
                     className="absolute top-[125vh] right-[5%] w-[300px] h-[400px] z-10">
-                    <Image 
-                        src="/images/presentasi_1.jpeg" 
-                        alt="" 
-                        fill 
-                        className="object-cover hover:grayscale-0 brightness-110 contrast-110 transition-all duration-700 grayscale" 
+                    <Image
+                        src="/images/presentasi_1.jpeg"
+                        alt=""
+                        fill
+                        sizes="300px"
+                        className="object-cover hover:grayscale-0 brightness-110 contrast-110 transition-all duration-700 grayscale"
                     />
                 </motion.div>
 
@@ -155,11 +159,12 @@ export default function Journey() {
                     style={{ y: y13 }} initial="hidden" whileInView="visible" viewport={{ once: true }} 
                     variants={imageVariants}
                     className="absolute top-[155vh] left-[10%] w-[220px] h-[300px] z-10">
-                    <Image 
-                        src="/images/sicegah_1.jpeg" 
-                        alt="" 
-                        fill 
-                        className="object-cover border-4 border-black hover:grayscale-0 brightness-110 contrast-110 transition-all duration-700 grayscale" 
+                    <Image
+                        src="/images/sicegah_1.jpeg"
+                        alt=""
+                        fill
+                        sizes="220px"
+                        className="object-cover border-4 border-black hover:grayscale-0 brightness-110 contrast-110 transition-all duration-700 grayscale"
                     />
                 </motion.div>
 
@@ -168,11 +173,12 @@ export default function Journey() {
                     style={{ y: y3 }} initial="hidden" whileInView="visible" viewport={{ once: true }} 
                     variants={imageVariants}
                     className="absolute top-[190vh] right-[10%] w-[400px] h-[280px] z-10 shadow-2xl">
-                    <Image 
-                        src="/images/olivia_juara_1.jpeg" 
-                        alt="" 
-                        fill 
-                        className="object-cover hover:grayscale-0 brightness-110 contrast-110 transition-all duration-700 grayscale" 
+                    <Image
+                        src="/images/olivia_juara_1.jpeg"
+                        alt=""
+                        fill
+                        sizes="400px"
+                        className="object-cover hover:grayscale-0 brightness-110 contrast-110 transition-all duration-700 grayscale"
                     />
                 </motion.div>
 
@@ -181,11 +187,12 @@ export default function Journey() {
                     style={{ y: y8 }} initial="hidden" whileInView="visible" viewport={{ once: true }} 
                     variants={imageVariants}
                     className="absolute top-[225vh] left-[5%] w-[280px] h-[400px] z-10">
-                    <Image 
-                        src="/images/olivia_fotbar_3.jpeg" 
-                        alt="" 
-                        fill 
-                        className="object-cover border-8 border-gray-100 shadow-xl hover:grayscale-0 brightness-110 contrast-110 transition-all duration-700 grayscale" 
+                    <Image
+                        src="/images/olivia_fotbar_3.jpeg"
+                        alt=""
+                        fill
+                        sizes="280px"
+                        className="object-cover border-8 border-gray-100 shadow-xl hover:grayscale-0 brightness-110 contrast-110 transition-all duration-700 grayscale"
                     />
                 </motion.div>
 
@@ -194,11 +201,12 @@ export default function Journey() {
                     style={{ y: y4 }} initial="hidden" whileInView="visible" viewport={{ once: true }} 
                     variants={imageVariants}
                     className="absolute top-[270vh] right-[15%] w-[260px] h-[380px] z-10">
-                    <Image 
-                        src="/images/olivia_juara_3.jpeg" 
-                        alt="" 
-                        fill 
-                        className="object-cover border-8 border-white shadow-xl hover:grayscale-0 brightness-110 contrast-110 transition-all duration-700 grayscale" 
+                    <Image
+                        src="/images/olivia_juara_3.jpeg"
+                        alt=""
+                        fill
+                        sizes="260px"
+                        className="object-cover border-8 border-white shadow-xl hover:grayscale-0 brightness-110 contrast-110 transition-all duration-700 grayscale"
                     />
                 </motion.div>
 
@@ -207,11 +215,12 @@ export default function Journey() {
                     style={{ y: y9 }} initial="hidden" whileInView="visible" viewport={{ once: true }} 
                     variants={imageVariants}
                     className="absolute top-[305vh] left-[15%] w-[380px] h-[260px] z-10 shadow-lg">
-                    <Image 
-                        src="/images/olivia_fotbar_1.jpeg" 
-                        alt="" 
-                        fill 
-                        className="object-cover hover:grayscale-0 brightness-110 contrast-110 transition-all duration-700 grayscale" 
+                    <Image
+                        src="/images/olivia_fotbar_1.jpeg"
+                        alt=""
+                        fill
+                        sizes="380px"
+                        className="object-cover hover:grayscale-0 brightness-110 contrast-110 transition-all duration-700 grayscale"
                     />
                 </motion.div>
 
@@ -220,11 +229,12 @@ export default function Journey() {
                     style={{ y: y10 }} initial="hidden" whileInView="visible" viewport={{ once: true }} 
                     variants={imageVariants}
                     className="absolute top-[335vh] right-[10%] w-[240px] h-[340px] z-10">
-                    <Image 
+                    <Image
                         src="/images/olivia_fotbar_4.jpeg"
-                        alt="" 
-                        fill 
-                        className="object-cover border-[12px] border-white shadow-md hover:grayscale-0 brightness-110 contrast-110 transition-all duration-700 grayscale" 
+                        alt=""
+                        fill
+                        sizes="240px"
+                        className="object-cover border-[12px] border-white shadow-md hover:grayscale-0 brightness-110 contrast-110 transition-all duration-700 grayscale"
                     />
                 </motion.div>
 
@@ -233,11 +243,12 @@ export default function Journey() {
                     style={{ y: y5 }} initial="hidden" whileInView="visible" viewport={{ once: true }} 
                     variants={imageVariants}
                     className="absolute top-[370vh] left-[10%] w-[350px] h-[250px] z-10 shadow-xl">
-                    <Image 
-                        src="/images/olivia_fotbar_2.jpeg" 
-                        alt="" 
-                        fill 
-                        className="object-cover border-[10px] border-white shadow-lg hover:grayscale-0 brightness-110 contrast-110 transition-all duration-700 grayscale" 
+                    <Image
+                        src="/images/olivia_fotbar_2.jpeg"
+                        alt=""
+                        fill
+                        sizes="350px"
+                        className="object-cover border-[10px] border-white shadow-lg hover:grayscale-0 brightness-110 contrast-110 transition-all duration-700 grayscale"
                     />
                 </motion.div>
 
@@ -246,11 +257,12 @@ export default function Journey() {
                     style={{ y: y11 }} initial="hidden" whileInView="visible" viewport={{ once: true }} 
                     variants={imageVariants}
                     className="absolute top-[400vh] right-[20%] w-[300px] h-[200px] z-10">
-                    <Image 
-                        src="/images/olivia_juara_2.jpeg" 
-                        alt="" 
-                        fill 
-                        className="object-cover hover:grayscale-0 brightness-110 contrast-110 transition-all duration-700 grayscale" 
+                    <Image
+                        src="/images/olivia_juara_2.jpeg"
+                        alt=""
+                        fill
+                        sizes="300px"
+                        className="object-cover hover:grayscale-0 brightness-110 contrast-110 transition-all duration-700 grayscale"
                     />
                 </motion.div>
 
@@ -259,11 +271,12 @@ export default function Journey() {
                     style={{ y: y12 }} initial="hidden" whileInView="visible" viewport={{ once: true }} 
                     variants={imageVariants}
                     className="absolute top-[420vh] left-[20%] w-[260px] h-[360px] z-10">
-                    <Image 
-                        src="/images/daniel.jpeg" 
-                        alt="" 
-                        fill 
-                        className="object-cover border-4 border-gray-200 hover:grayscale-0 brightness-110 contrast-110 transition-all duration-700 grayscale" 
+                    <Image
+                        src="/images/daniel.jpeg"
+                        alt=""
+                        fill
+                        sizes="260px"
+                        className="object-cover border-4 border-gray-200 hover:grayscale-0 brightness-110 contrast-110 transition-all duration-700 grayscale"
                     />
                 </motion.div>
             </div>

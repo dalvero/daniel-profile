@@ -55,7 +55,7 @@ export default function Principles() {
           className="flex flex-col items-center w-[40%] h-full"
         >
           <div className="relative w-[125px] h-[125px]">
-            <Image src="/images/clarity.png" alt="Clarity" fill className="object-cover" />
+            <Image src="/images/clarity.png" alt="Clarity" fill sizes="125px" className="object-cover" />
           </div>
           <p className="text-lg mt-10 font-[family-name:var(--font-inter)] text-center font-light text-white">
             Clarity means writing code that not only works, but can be understood by others, and by myself in the future.
@@ -76,7 +76,7 @@ export default function Principles() {
           className="flex flex-col items-center w-[40%] h-full"
         >
           <div className="relative w-[125px] h-[125px]">
-            <Image src="/images/consistent.png" alt="Consistency" fill className="object-cover" />
+            <Image src="/images/consistent.png" alt="Consistency" fill sizes="125px" className="object-cover" />
           </div>
           <p className="text-lg mt-10 font-[family-name:var(--font-inter)] text-center font-light text-white">
             Consistency is what turns small improvements into real progress. Showing up, learning, building even when it gets frustrating.

@@ -77,6 +77,7 @@ function Card3D({ lang, isHovered, onEnter, onLeave }) {
                 src={lang.image}
                 alt={lang.name}
                 fill
+                sizes="48px"
                 className="object-contain"
             />
         </div>
