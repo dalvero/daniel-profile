@@ -1,0 +1,72 @@
+[
+  {
+    "id": "sicegah-hebat",
+    "title": "SiCegah Hebat",
+    "description": "Aplikasi mobile kesehatan untuk pencegahan stunting, dikembangkan untuk penelitian FKM Universitas Brawijaya. Tersedia di Google Play Store.",
+    "image": "/images/sicegah_1.jpeg",
+    "color": "#13006c",
+    "link": "#",
+    "github": "#",
+    "category": "Mobile",
+    "tags": ["Flutter", "Dart", "Firebase"],
+    "year": "2025",
+    "status": "done",
+    "featured": true
+  },
+  {
+    "id": "olivia-2025",
+    "title": "OLIVIA 2025",
+    "description": "Juara 1 kategori Web Technology di kompetisi OLIVIA 2025. Website interaktif dengan animasi scroll-driven dan desain responsif.",
+    "image": "/images/olivia_sertif.jpeg",
+    "color": "#5196fd",
+    "link": "#",
+    "github": "#",
+    "category": "Web",
+    "tags": ["HTML", "CSS", "JavaScript"],
+    "year": "2025",
+    "status": "done",
+    "featured": true
+  },
+  {
+    "id": "java-gui-app",
+    "title": "Java GUI Application",
+    "description": "Aplikasi desktop berbasis Java Swing dengan antarmuka grafis untuk manajemen data. Menggunakan arsitektur MVC dan koneksi database MySQL.",
+    "image": "/images/java_gui_1.jpeg",
+    "color": "#8f89ff",
+    "link": "#",
+    "github": "#",
+    "category": "Java",
+    "tags": ["Java", "Swing", "MySQL"],
+    "year": "2024",
+    "status": "done",
+    "featured": false
+  },
+  {
+    "id": "iot-experiment",
+    "title": "IoT Experiment",
+    "description": "Eksperimen Internet of Things menggunakan Arduino dan sensor untuk monitoring lingkungan. Data dikirim secara real-time ke dashboard web.",
+    "image": "/images/code_iel_1.jpeg",
+    "color": "#fd521a",
+    "link": "#",
+    "github": "#",
+    "category": "IoT",
+    "tags": ["Arduino", "C++", "ESP32"],
+    "year": "2024",
+    "status": "done",
+    "featured": false
+  },
+  {
+    "id": "ui-experiment",
+    "title": "UI Design Experiment",
+    "description": "Eksplorasi desain antarmuka dengan Figma dan implementasi menggunakan TailwindCSS. Fokus pada micro-interaction dan responsive layout.",
+    "image": "/images/olivia_fotbar_1.jpeg",
+    "color": "#ed649e",
+    "link": "#",
+    "github": "#",
+    "category": "UI",
+    "tags": ["Figma", "TailwindCSS", "Framer Motion"],
+    "year": "2025",
+    "status": "done",
+    "featured": false
+  }
+]

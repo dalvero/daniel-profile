@@ -28,9 +28,22 @@ const PAGE_SECTIONS = {
     { name: "Core Values", id: "about-values" },
     { name: "CTA", id: "about-cta" },
   ],
-  "/projects": [],
-  "/achievement": [],
-  "/contact": [],
+  "/projects": [
+    { name: "Hero", id: "projects-hero" },
+    { name: "Showcase", id: "projects-showcase" },
+    { name: "Categories", id: "projects-marquee" },
+    { name: "CTA", id: "projects-cta" },
+  ],
+  "/achievement": [
+    { name: "Hero", id: "achievement-hero" },
+    { name: "Achievements", id: "achievement-carousel" },
+    { name: "FAQ", id: "achievement-faq" },
+    { name: "CTA", id: "projects-cta" },
+  ],
+  "/contact": [
+    { name: "Hero", id: "contact-hero" },
+    { name: "Contact", id: "contact-section" },
+  ],
 };
 
 // ── Semua halaman ────────────────────────────────────────────────────────
@@ -43,7 +56,7 @@ const ALL_PAGES = [
 ];
 
 // Halaman yang background hero-nya gelap/foto — navbar harus selalu putih saat di atas
-const DARK_HERO_PAGES = ["/about"];
+const DARK_HERO_PAGES = ["/about", "/projects", "/achievement", "/contact"];
 
 export default function Navbar() {
   const pathname = usePathname();

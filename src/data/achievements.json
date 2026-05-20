@@ -1,0 +1,52 @@
+[
+  {
+    "id": "olivia-2025",
+    "title": "1st Place Web Technology",
+    "event": "OLIVIA 2025",
+    "category": "Competition",
+    "year": "2025",
+    "description": "Juara 1 kategori Web Technology di kompetisi OLIVIA 2025. Membangun website interaktif dengan animasi scroll-driven dan desain responsif yang mengesankan juri.",
+    "image": "/images/olivia_juara_1.jpeg",
+    "color": "#5196fd"
+  },
+  {
+    "id": "sicegah-hebat",
+    "title": "Play Store Launch",
+    "event": "SiCegah Hebat",
+    "category": "Project",
+    "year": "2025",
+    "description": "Berhasil meluncurkan aplikasi mobile SiCegah Hebat di Google Play Store. Aplikasi ini dikembangkan untuk penelitian pencegahan stunting oleh FKM Universitas Brawijaya.",
+    "image": "/images/sicegah_1.jpeg",
+    "color": "#13006c"
+  },
+  {
+    "id": "provoks-mentor",
+    "title": "Web Technology Mentor",
+    "event": "Provoks Community",
+    "category": "Organization",
+    "year": "2024",
+    "description": "Dipercaya sebagai Mentor Web Technology di komunitas Provoks Universitas Brawijaya. Membimbing anggota baru memahami web development dari dasar hingga implementasi.",
+    "image": "/images/provoks_1.jpeg",
+    "color": "#ed649e"
+  },
+  {
+    "id": "olivia-2024",
+    "title": "Best Innovation",
+    "event": "OLIVIA 2024",
+    "category": "Competition",
+    "year": "2024",
+    "description": "Meraih penghargaan Best Innovation di kompetisi OLIVIA 2024 dengan proyek IoT monitoring lingkungan menggunakan Arduino dan dashboard web real-time.",
+    "image": "/images/olivia_fotbar_2.jpeg",
+    "color": "#8f89ff"
+  },
+  {
+    "id": "academic-achievement",
+    "title": "Dean's List",
+    "event": "Universitas Brawijaya",
+    "category": "Academic",
+    "year": "2024",
+    "description": "Masuk dalam daftar mahasiswa berprestasi dengan IPK tinggi. Konsisten menjaga performa akademik sambil aktif berorganisasi dan berkompetisi.",
+    "image": "/images/formal_daniel.png",
+    "color": "#fd521a"
+  }
+]

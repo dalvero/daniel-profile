@@ -72,6 +72,12 @@ src/
 ├── app/
 │   ├── about/
 │   │   └── page.js              — Entry point halaman About
+│   ├── achievement/
+│   │   └── page.js              — Entry point halaman Achievement
+│   ├── contact/
+│   │   └── page.js              — Entry point halaman Contact
+│   ├── projects/
+│   │   └── page.js              — Entry point halaman Projects
 │   ├── globals.css
 │   ├── layout.js                — Root layout (fonts, Navbar, PageTransition)
 │   └── page.js                  — Entry point landing page
@@ -92,21 +98,38 @@ src/
 │   │   ├── SigLanguage.js       — Carousel quotes tokoh
 │   │   ├── Language.js          — 3D hover tech stack infinite scroll
 │   │   └── Journey.js           — Parallax banyak foto + quotes
-│   └── about/                   ← About page sections (hanya dipakai di /about)
-│       ├── HeroAbout.js         — Parallax hero + editorial text (BlurText reveal)
-│       ├── AboutIntro.js        — Scroll-driven spotlight: focus areas + image swap
-│       ├── CoreValues.js        — Core Values spotlight: Who/What/Why/How + paragraf
-│       ├── TimelineSection.js   — Dark editorial timeline + sticky photo
-│       ├── AboutCTA.js          — CTA + social icons + parallax background
-│       └── BlurText.js          — Scroll-driven per-word blur reveal (shared)
-└── data/                        — (Kosong — belum diisi, prioritas selanjutnya)
+│   ├── about/                   ← About page sections (hanya dipakai di /about)
+│   │   ├── HeroAbout.js         — Parallax hero + editorial text (BlurText reveal)
+│   │   ├── AboutIntro.js        — Scroll-driven spotlight: focus areas + image swap
+│   │   ├── CoreValues.js        — Core Values spotlight: Who/What/Why/How + paragraf
+│   │   ├── TimelineSection.js   — Dark editorial timeline + sticky photo
+│   │   ├── AboutCTA.js          — CTA + social icons + parallax background
+│   │   └── BlurText.js          — Scroll-driven per-word blur reveal (shared)
+│   ├── projects/                ← Projects page sections (hanya dipakai di /projects)
+│   │   ├── ProjectsHero.js      — Parallax hero + BlurText reveal
+│   │   ├── ProjectsShowcase.js  — Stripe-style card grid (hover gradient + image)
+│   │   ├── ProjectsMarquee.js   — Infinite marquee kategori/tech (rAF, scroll-responsive)
+│   │   └── ProjectsCTA.js       — CTA + social icons + parallax background
+│   ├── achievement/             ← Achievement page sections (hanya dipakai di /achievement)
+│   │   ├── AchievementHero.js   — Parallax hero + BlurText reveal
+│   │   ├── AchievementCarousel.js — 3D carousel drag-to-swipe (rotateY, autoplay, loop)
+│   │   ├── AchievementFAQ.js    — Accordion FAQ (AnimatePresence expand/collapse)
+│   │   └── AchievementCTA.js    — CTA + social icons + parallax background
+│   └── contact/                 ← Contact page sections (hanya dipakai di /contact)
+│       ├── ContactHero.js       — Parallax hero + BlurText reveal
+│       └── ContactSection.js    — Split layout: info kontak + form (UI placeholder)
+└── data/
+    ├── achievements.json        — Data achievement (JSON, mudah dimodifikasi)
+    └── projects.json            — Data proyek (JSON, mudah dimodifikasi)
 ```
 
 > **Konvensi folder:**
 > - `common/` → komponen yang dipakai di layout atau multiple halaman (Navbar, Footer, Loader, PageTransition)
 > - `landing/` → section khusus landing page (tidak dipakai di halaman lain)
 > - `about/` → section khusus halaman About (tidak dipakai di halaman lain)
-> - Saat halaman baru dibuat (`/projects`, `/achievement`), buat folder baru: `components/projects/`, `components/achievement/`
+> - `projects/` → section khusus halaman Projects (tidak dipakai di halaman lain)
+> - `achievement/` → section khusus halaman Achievement (tidak dipakai di halaman lain)
+> - `contact/` → section khusus halaman Contact (tidak dipakai di halaman lain)
 
 ---
 
@@ -144,74 +167,68 @@ src/
 
 ---
 
-### 4.2 Halaman Achievement (`/achievement`)
+### 4.2 Halaman Achievement (`/achievement`) ✅ SELESAI
 
 **Tujuan:** Showcase pencapaian, sertifikat, kompetisi.
 
-**Konten yang perlu ada:**
-- List achievement dengan tahun, nama event, kategori, posisi
-- Gambar sertifikat / foto dokumentasi
-- Badge / kategori (kompetisi, akademik, organisasi, project)
-- Filter atau tab per kategori (opsional)
+**Konten yang ada:**
+- ✅ AchievementHero — parallax hero + BlurText reveal
+- ✅ AchievementCarousel — 3D carousel drag-to-swipe, autoplay, loop, dots
+- ✅ AchievementFAQ — accordion FAQ dengan AnimatePresence
+- ✅ AchievementCTA — CTA + social icons + parallax background
+- ✅ Data di `src/data/achievements.json` (5 entry placeholder)
 
-**Data awal (dari kode):**
-- OLIVIA 2025 — 1st Place Web Technology
-- SiCegah Hebat — Play Store app untuk penelitian stunting FKM UB
+**Teknik animasi:**
+- **3D Carousel** — `useMotionValue` + `useTransform` untuk `rotateY` perspective, drag gesture, autoplay loop dengan clone
+- **Accordion FAQ** — `AnimatePresence` expand/collapse, Plus icon rotate
+- **scroll-driven reveal/unreveal** — semua section pakai `useScroll` + `useTransform` untuk opacity/y/blur
 
-**Catatan desain:** Section ini punya banyak gambar (dari Perspective component). Pertimbangkan layout masonry atau grid dengan hover effect.
+**Yang masih perlu dilengkapi (konten):**
+- [ ] Ganti data placeholder di `achievements.json` dengan data nyata
+- [ ] Ganti foto placeholder dengan foto asli
 
 ---
 
-### 4.3 Halaman Project (`/projects`)
+### 4.3 Halaman Project (`/projects`) ✅ SELESAI
 
 **Tujuan:** Portofolio proyek nyata untuk dilihat recruiter.
 
-**Konten per proyek:**
-- Nama proyek
-- Deskripsi singkat
-- Tech stack yang dipakai
-- Kategori (Web, Mobile/Flutter, Java, IoT, UI Experiment)
-- Link GitHub / Live Demo
-- Gambar / screenshot
-- Status (selesai / ongoing)
+**Konten yang ada:**
+- ✅ ProjectsHero — parallax hero + BlurText reveal
+- ✅ ProjectsShowcase — Stripe-style card grid dengan hover gradient + image
+- ✅ ProjectsMarquee — infinite marquee kategori/tech (rAF, scroll-responsive)
+- ✅ ProjectsCTA — CTA + social icons + parallax background
+- ✅ Data di `src/data/projects.json` (5 entry placeholder)
 
-**Kategori proyek (dari Footer):**
-- Web Projects
-- Java Projects
-- IoT Projects
-- UI Experiment
+**Teknik animasi:**
+- **Stripe-style cards** — hover: image turun, gradient overlay muncul, link fade in. Grid 2 kolom responsive
+- **Marquee** — rAF loop dengan scroll-responsive speed (pattern dari Language.js)
+- **scroll-driven reveal/unreveal** — setiap card punya scroll-driven opacity/y/scale/blur via `useScroll` + `useSpring` + `useTransform`
+
+**Yang masih perlu dilengkapi (konten):**
+- [ ] Ganti data placeholder di `projects.json` dengan data nyata
+- [ ] Ganti foto placeholder dengan screenshot proyek asli
 
 ---
 
-## 5. STRUKTUR FILE TARGET (SETELAH HALAMAN BARU)
+### 4.4 Halaman Contact (`/contact`) ✅ SELESAI
 
-```
-src/
-├── app/
-│   ├── about/
-│   │   └── page.js              ✅ Ada
-│   ├── achievement/
-│   │   └── page.js
-│   ├── projects/
-│   │   └── page.js
-│   ├── globals.css
-│   ├── layout.js
-│   └── page.js
-├── components/
-│   ├── [semua komponen landing page yang ada]
-│   ├── about/                   ✅ Ada (6 komponen)
-│   ├── achievement/
-│   │   ├── AchievementCard.js
-│   │   └── AchievementGrid.js
-│   └── projects/
-│       ├── ProjectCard.js
-│       └── ProjectGrid.js
-├── data/
-│   ├── achievements.js
-│   ├── projects.js
-│   └── timeline.js
-└── styles/
-```
+**Tujuan:** Halaman kontak untuk kolaborasi dan magang.
+
+**Konten yang ada:**
+- ✅ ContactHero — parallax hero "LET'S CONNECT." + BlurText reveal
+- ✅ ContactSection — split layout: kiri info kontak, kanan form (UI placeholder)
+- ✅ Form: name, email, subject, message — UI placeholder (tidak ada backend)
+- ✅ Social icons: Gmail, GitHub, LinkedIn, Instagram
+
+**Yang masih perlu dilengkapi:**
+- [ ] Integrasi backend form (EmailJS/Resend) jika diperlukan
+
+---
+
+## 5. STRUKTUR FILE TARGET — TERCAPAI ✅
+
+Semua halaman utama sudah dibuat. Struktur file saat ini sudah sesuai target (lihat Section 3).
 
 ---
 
@@ -317,19 +334,23 @@ Navbar sudah memiliki link ke `/about`, `/projects`, `/achievement`, `/contact`.
 - [x] Footer: split layout + social links + CTA
 - [x] **Halaman `/about` — struktur & semua komponen** (6 Mei 2026)
 - [x] **About redesign — editorial spotlight style** (19 Mei 2026)
+- [x] **Halaman `/projects` — Stripe-style cards + marquee + CTA** (20 Mei 2026)
+- [x] **Halaman `/achievement` — 3D carousel + FAQ + CTA** (20 Mei 2026)
+- [x] **Halaman `/contact` — split layout form + info kontak** (20 Mei 2026)
+- [x] **Data layer** — `src/data/projects.json` & `src/data/achievements.json`
+- [x] **Navbar sections** — semua halaman punya section IDs di dropdown
 
 ### 🔲 Selanjutnya (Target Magang)
 - [ ] **Isi konten About** — ganti semua `[PLACEHOLDER]` dengan teks nyata Daniel
 - [ ] **Ganti foto About** — foto Unsplash → foto asli di `/public/images/`
 - [ ] **Email & CV** — isi email di `AboutCTA.js`, upload `cv.pdf` ke `/public/`
-- [ ] Ekstrak data ke `src/data/` (projects, achievements, timeline)
-- [ ] Halaman `/achievement`
-- [ ] Halaman `/projects`
+- [ ] **Isi data JSON** — ganti placeholder di `projects.json` & `achievements.json`
+- [ ] **Ganti foto projects/achievement** — screenshot proyek asli
 - [ ] Koneksi link footer & navbar ke halaman nyata
 - [ ] Isi link sosial (GitHub, Instagram, LinkedIn, Notion) di Footer
+- [ ] Integrasi form contact (EmailJS/Resend) jika diperlukan
 
 ### 🔲 Masa Depan (Post-Magang)
-- [ ] Halaman `/contact` dengan form (pakai Resend/EmailJS)
 - [ ] API Routes Next.js sebagai backend mini
 - [ ] Database (PostgreSQL via Supabase / PlanetScale)
 - [ ] Dashboard CMS (`/admin`) dengan autentikasi (NextAuth)
@@ -347,7 +368,7 @@ Navbar sudah memiliki link ke `/about`, `/projects`, `/achievement`, `/contact`.
 
 3. **ClientWrapper** — loader 3.5 detik. Jika di production terasa lambat, turunkan ke 2 detik.
 
-4. **`src/data/` masih kosong** — prioritas pertama sebelum membuat halaman baru, agar komponen halaman baru langsung bisa import data.
+4. **`src/data/`** — berisi `projects.json` dan `achievements.json`. Format JSON agar mudah dimodifikasi tanpa menyentuh kode komponen.
 
 5. **`/contact`** belum ada di rencana dekat — tapi sudah ada di Navbar dan Footer. Bisa buat placeholder page dulu (`coming soon`) agar link tidak 404.
 
@@ -501,6 +522,45 @@ Berdasarkan analisis kode, gaya desain ini terinspirasi dari:
 
 **globals.css — updated:**
 - Tambah `.focus-list::-webkit-scrollbar { display: none }` untuk hide scrollbar
+
+### 20 Mei 2026 — Halaman Projects, Achievement, Contact
+
+**Halaman Projects (`/projects`) — 4 komponen baru:**
+- `src/app/projects/page.js` — entry point
+- `src/components/projects/ProjectsHero.js` — parallax hero + BlurText + scroll-driven reveal/unreveal
+- `src/components/projects/ProjectsShowcase.js` — Stripe-style card grid (hover gradient per project color, image parallax, grayscale)
+- `src/components/projects/ProjectsMarquee.js` — infinite marquee kategori/tech (rAF loop, scroll-responsive speed, pattern dari Language.js)
+- `src/components/projects/ProjectsCTA.js` — CTA + social icons + parallax background (reuse pattern AboutCTA)
+- `src/data/projects.json` — 5 entry placeholder (format JSON)
+
+**Halaman Achievement (`/achievement`) — 4 komponen baru:**
+- `src/app/achievement/page.js` — entry point
+- `src/components/achievement/AchievementHero.js` — parallax hero + BlurText + scroll-driven reveal/unreveal
+- `src/components/achievement/AchievementCarousel.js` — 3D carousel drag-to-swipe (`useMotionValue` + `useTransform` rotateY, autoplay, loop dengan clone, dots indicator)
+- `src/components/achievement/AchievementFAQ.js` — accordion FAQ (`AnimatePresence` expand/collapse, Plus icon rotate, 5 FAQ items)
+- `src/components/achievement/AchievementCTA.js` — CTA + social icons + parallax background
+- `src/data/achievements.json` — 5 entry placeholder (format JSON)
+
+**Halaman Contact (`/contact`) — 2 komponen baru:**
+- `src/app/contact/page.js` — entry point
+- `src/components/contact/ContactHero.js` — parallax hero "LET'S CONNECT." + BlurText
+- `src/components/contact/ContactSection.js` — split layout: kiri info kontak (email, location, social icons), kanan form (name, email, subject, message) — UI placeholder
+
+**Navbar.js — updated:**
+- `PAGE_SECTIONS`: semua halaman punya section IDs (`/projects`, `/achievement`, `/contact`)
+- `DARK_HERO_PAGES`: tambah `/projects`, `/achievement`, `/contact`
+
+**Animasi yang dipakai di halaman baru:**
+- **scroll-driven reveal/unreveal** — semua section pakai `useScroll` + `useSpring` + `useTransform` untuk opacity, translateY, scale, dan blur yang berfungsi saat masuk DAN keluar viewport
+- **3D Carousel** — `useMotionValue` + `useTransform` untuk `rotateY` perspective, drag gesture, autoplay loop
+- **Stripe-style cards** — hover gradient overlay yang mengikuti `color` per project, image translateY on hover
+- **Marquee** — rAF loop dengan scroll-responsive speed interpolation (pattern dari Language.js)
+- **Accordion FAQ** — `AnimatePresence` expand/collapse dengan height animation
+
+**Data layer:**
+- `src/data/projects.json` — 5 proyek placeholder (SiCegah Hebat, OLIVIA 2025, Java GUI, IoT Experiment, UI Experiment)
+- `src/data/achievements.json` — 5 achievement placeholder (OLIVIA 2025, SiCegah Play Store, Provoks Mentor, OLIVIA 2024, Dean's List)
+- Format JSON agar mudah dimodifikasi tanpa menyentuh kode komponen
 
 ---
 
